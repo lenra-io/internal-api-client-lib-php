@@ -1,0 +1,3 @@
+outputDir: "."
+generatorName: php
+artifactId: lenra/internal-api-client
