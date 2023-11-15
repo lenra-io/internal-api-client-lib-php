@@ -1,6 +1,6 @@
 # OpenAPIClient-php
 
-The API usable by the Lenra appmications
+The API usable by the Lenra applications
 
 For more information, please visit [https://www.lenra.io/contact.html](https://www.lenra.io/contact.html).
 

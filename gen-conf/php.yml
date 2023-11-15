@@ -1,4 +1,4 @@
 '!include': 'common.yml'
 outputDir: "."
 generatorName: php
-artifactId: lenra/internal-api-client
+composerPackageName: lenra/internal-api-client

@@ -1,5 +1,6 @@
 {
-    "description": "The API usable by the Lenra appmications",
+    "name": "lenra/internal-api-client",
+    "description": "The API usable by the Lenra applications",
     "keywords": [
         "openapitools",
         "openapi-generator",
@@ -10,11 +11,11 @@
         "api"
     ],
     "homepage": "https://openapi-generator.tech",
-    "license": "unlicense",
+    "license": "MIT",
     "authors": [
         {
-            "name": "OpenAPI",
-            "homepage": "https://openapi-generator.tech"
+            "name": "Lenra",
+            "homepage": "https://www.lenra.io"
         }
     ],
     "require": {
