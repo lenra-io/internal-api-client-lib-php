@@ -221,6 +221,8 @@ paths:
                   $ref: "#/components/schemas/data.query"
                 projection:
                   type: object
+                  nullable: true
+                  additionalProperties: true
               required:
                 - query
               additionalProperties: false

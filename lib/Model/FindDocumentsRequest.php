@@ -58,7 +58,7 @@ class FindDocumentsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'query' => 'array<string,mixed>',
-        'projection' => 'object'
+        'projection' => 'array<string,mixed>'
     ];
 
     /**
@@ -80,7 +80,7 @@ class FindDocumentsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static array $openAPINullables = [
         'query' => true,
-		'projection' => false
+		'projection' => true
     ];
 
     /**
@@ -336,7 +336,7 @@ class FindDocumentsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets projection
      *
-     * @return object|null
+     * @return array<string,mixed>|null
      */
     public function getProjection()
     {
@@ -346,14 +346,21 @@ class FindDocumentsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets projection
      *
-     * @param object|null $projection projection
+     * @param array<string,mixed>|null $projection projection
      *
      * @return self
      */
     public function setProjection($projection)
     {
         if (is_null($projection)) {
-            throw new \InvalidArgumentException('non-nullable projection cannot be null');
+            array_push($this->openAPINullablesSetToNull, 'projection');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('projection', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
         }
         $this->container['projection'] = $projection;
 

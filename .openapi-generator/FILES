@@ -16,6 +16,3 @@ lib/Model/ModelInterface.php
 lib/Model/UpdateManyDocumentsRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/DataApiTest.php
-test/Model/FindDocumentsRequestTest.php
-test/Model/UpdateManyDocumentsRequestTest.php
