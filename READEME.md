@@ -1,3 +1,7 @@
+## Load API description
+
+wget https://github.com/lenra-io/api/releases/latest/download/load-api.sh -O - -q | bash
+
 ## Generate
 
 ```bash
